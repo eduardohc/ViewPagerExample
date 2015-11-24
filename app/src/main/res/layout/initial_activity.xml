@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="80dp"
+    android:background="#EC4646">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Donnfor"
+        android:textSize="70sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/tv_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Help others to live with your blood"
+        android:id="@+id/tv_subtitle"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

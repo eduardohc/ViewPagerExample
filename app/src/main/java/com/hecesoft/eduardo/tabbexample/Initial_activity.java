@@ -38,6 +38,9 @@ public class Initial_activity extends Activity {
         title.setTypeface(typeface_title);
 
         animation = AnimationUtils.loadAnimation(this, R.anim.donnfor_subtitle);
+        Typeface typeface_subtitle = Typeface.createFromAsset(
+                getAssets(), "fonts/HelveticaNeueLT.ttf");
+        subtitle.setTypeface(typeface_subtitle);
         subtitle.startAnimation(animation);
 
 
@@ -45,7 +48,7 @@ public class Initial_activity extends Activity {
         Thread timer = new Thread(){
             public void run() {
                 try{
-                    sleep(5000);
+                    sleep(3000);
                 }catch (Exception e){
                     e.printStackTrace();
                 } finally {
@@ -68,4 +71,7 @@ public class Initial_activity extends Activity {
         super.onBackPressed();
         System.exit(1);
     }
+
+
+
 }

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:id="@+id/viewPager_layouts"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="17"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <include layout="@layout/viewpager_activity" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/signup_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="83"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/circle1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle_paint"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/circle2"
+            android:layout_toLeftOf="@id/circle2"/>
+
+        <View
+            android:id="@+id/circle2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/circle3"
+            android:layout_toLeftOf="@id/circle3"/>
+
+        <View
+            android:id="@+id/circle3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:id="@+id/circle4"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/circle3"
+            android:layout_toRightOf="@id/circle3"/>
+
+        <View
+            android:id="@+id/circle5"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/circle4"
+            android:layout_toRightOf="@id/circle4"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle3"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Sign up"
+            android:id="@+id/button"
+            android:onClick="openSignUpActivity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView"
+            android:layout_below="@+id/button"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>

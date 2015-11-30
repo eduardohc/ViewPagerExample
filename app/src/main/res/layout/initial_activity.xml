@@ -22,7 +22,7 @@
         android:paddingTop="5dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:textSize="20sp"
+        android:textSize="23sp"
         android:textColor="@color/white"
         android:text="Help others to live with your blood"
         android:id="@+id/tv_subtitle"

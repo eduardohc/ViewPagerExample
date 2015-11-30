@@ -23,7 +23,7 @@ public class Page_Five extends Fragment {
         View pageFive = inflater.inflate(R.layout.page_five, container, false);
         ((TextView)pageFive.findViewById(R.id.tv_pagefive)).setText("Welcome to page five");
 
-        Button btn_openSignUp = (Button)pageFive.findViewById(R.id.btn_signUp);
+        /*Button btn_openSignUp = (Button)pageFive.findViewById(R.id.btn_signUp);
         btn_openSignUp.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -31,7 +31,7 @@ public class Page_Five extends Fragment {
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }
-        });
+        });*/
 
         return pageFive;
     }

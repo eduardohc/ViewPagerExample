@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -19,7 +20,8 @@ public class Page_one extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
 
         View pageOne = inflater.inflate(R.layout.page_one, container, false);
-        ((TextView)pageOne.findViewById(R.id.tv_pageone)).setText("Welcome to page one");
+        ((ImageView)pageOne.findViewById(R.id.imageView)).setImageResource(R.drawable.infografia_one);
+        //((TextView)pageOne.findViewById(R.id.tv_pageone)).setText("Welcome to page one");
 
         return pageOne;
     }

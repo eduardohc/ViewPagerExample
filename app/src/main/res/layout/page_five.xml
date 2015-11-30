@@ -12,10 +12,4 @@
         android:id="@+id/tv_pagefive"
         android:layout_gravity="center_horizontal" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign up Donnfor"
-        android:id="@+id/btn_signUp"
-        android:layout_gravity="center_horizontal" />
 </LinearLayout>

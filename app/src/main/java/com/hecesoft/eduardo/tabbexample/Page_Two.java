@@ -20,7 +20,7 @@ public class Page_Two extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
 
         View pageTwo = inflater.inflate(R.layout.page_two, container, false);
-        ((ImageView)pageTwo.findViewById(R.id.imageView2)).setImageResource(R.drawable.info_two);
+        //((ImageView)pageTwo.findViewById(R.id.imageView2)).setImageResource(R.drawable.info_two);
         //((TextView)pageTwo.findViewById(R.id.tv_pagetwo)).setText("Welcome to page two");
 
         return pageTwo;

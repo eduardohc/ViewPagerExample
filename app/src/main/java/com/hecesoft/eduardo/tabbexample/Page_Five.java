@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -23,15 +25,20 @@ public class Page_Five extends Fragment {
         View pageFive = inflater.inflate(R.layout.page_five, container, false);
         ((TextView)pageFive.findViewById(R.id.tv_pagefive)).setText("Welcome to page five");
 
-        /*Button btn_openSignUp = (Button)pageFive.findViewById(R.id.btn_signUp);
-        btn_openSignUp.setOnClickListener(new View.OnClickListener(){
+        //Declare the animation
+        final Animation anim = AnimationUtils.loadAnimation(getContext(), R.anim.donnfor_subtitle);
+        final Button btn_signup = (Button) pageFive.findViewById(R.id.btn_signup);
+        btn_signup.startAnimation(anim);
+
+        /*Button btn_openSignUp = (Button)pageFive.findViewById(R.id.btn_signUp);*/
+        btn_signup.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(view.getContext(), MainActivity.class);
+                Intent intent = new Intent(getContext(), MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }
-        });*/
+        });
 
         return pageFive;
     }

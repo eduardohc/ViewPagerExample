@@ -20,7 +20,7 @@ public class Page_one extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
 
         View pageOne = inflater.inflate(R.layout.page_one, container, false);
-        ((ImageView)pageOne.findViewById(R.id.imageView)).setImageResource(R.drawable.infografia_one);
+        //((ImageView)pageOne.findViewById(R.id.imageView)).setImageResource(R.drawable.infografia_one);
         //((TextView)pageOne.findViewById(R.id.tv_pageone)).setText("Welcome to page one");
 
         return pageOne;

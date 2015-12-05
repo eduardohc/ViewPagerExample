@@ -23,7 +23,7 @@ public class Information_Tabs extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.resume_layouts);
+        setContentView(R.layout.full_screen_layout);
 
         try {
             tabPagerAdapter = new TabPagerAdapter(getSupportFragmentManager());
@@ -89,36 +89,37 @@ public class Information_Tabs extends FragmentActivity {
         switch (position){
             case 0:
                 circle1.setBackgroundResource(R.drawable.circle_paint);
+                //circle1.setElevation(5);
                 circle2.setBackgroundResource(R.drawable.circle);
-                circle3.setBackgroundResource(R.drawable.circle);
+                /*circle3.setBackgroundResource(R.drawable.circle);
                 circle4.setBackgroundResource(R.drawable.circle);
-                circle5.setBackgroundResource(R.drawable.circle);
+                circle5.setBackgroundResource(R.drawable.circle);*/
                 break;
             case 1:
                 circle1.setBackgroundResource(R.drawable.circle);
                 circle2.setBackgroundResource(R.drawable.circle_paint);
                 circle3.setBackgroundResource(R.drawable.circle);
-                circle4.setBackgroundResource(R.drawable.circle);
-                circle5.setBackgroundResource(R.drawable.circle);
+                /*circle4.setBackgroundResource(R.drawable.circle);
+                circle5.setBackgroundResource(R.drawable.circle);*/
                 break;
             case 2:
-                circle1.setBackgroundResource(R.drawable.circle);
+                //circle1.setBackgroundResource(R.drawable.circle);
                 circle2.setBackgroundResource(R.drawable.circle);
                 circle3.setBackgroundResource(R.drawable.circle_paint);
                 circle4.setBackgroundResource(R.drawable.circle);
-                circle5.setBackgroundResource(R.drawable.circle);
+                //circle5.setBackgroundResource(R.drawable.circle);
                 break;
             case 3:
-                circle1.setBackgroundResource(R.drawable.circle);
-                circle2.setBackgroundResource(R.drawable.circle);
+                /*circle1.setBackgroundResource(R.drawable.circle);
+                circle2.setBackgroundResource(R.drawable.circle);*/
                 circle3.setBackgroundResource(R.drawable.circle);
                 circle4.setBackgroundResource(R.drawable.circle_paint);
                 circle5.setBackgroundResource(R.drawable.circle);
                 break;
             case 4:
-                circle1.setBackgroundResource(R.drawable.circle);
+                /*circle1.setBackgroundResource(R.drawable.circle);
                 circle2.setBackgroundResource(R.drawable.circle);
-                circle3.setBackgroundResource(R.drawable.circle);
+                circle3.setBackgroundResource(R.drawable.circle);*/
                 circle4.setBackgroundResource(R.drawable.circle);
                 circle5.setBackgroundResource(R.drawable.circle_paint);
                 break;

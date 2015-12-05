@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <include layout="@layout/viewpager_activity"/>
+
+    <View
+        style="@style/statusPagePoint"
+        android:id="@+id/circle1"
+        android:layout_toLeftOf="@+id/circle2"
+        android:background="@drawable/circle_paint"/>
+
+    <View
+        style="@style/statusPagePoint"
+        android:id="@+id/circle2"
+        android:layout_toLeftOf="@+id/circle3"/>
+
+    <View
+        style="@style/statusPagePoint"
+        android:id="@+id/circle3"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        style="@style/statusPagePoint"
+        android:id="@+id/circle4"
+        android:layout_toRightOf="@+id/circle3"/>
+
+    <View
+        style="@style/statusPagePoint"
+        android:id="@+id/circle5"
+        android:layout_toRightOf="@+id/circle4"/>
+
+</RelativeLayout>
